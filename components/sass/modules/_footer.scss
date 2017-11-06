@@ -1,4 +1,5 @@
 footer {
+<<<<<<< HEAD
   @include container(100%);
   background: lighten($dark, 20);
   padding: 30px 0;
@@ -17,3 +18,25 @@ footer {
     } //ul
   } //social
 }//footer
+=======
+    @include container(100%);
+    background-color: lighten($dark, 20);
+    padding: 30px 0;
+
+    #socialmedia {
+        text-align: center;
+
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                padding: 0 10px;
+                img {
+                    width: 30px;
+                    @include border-radius(50%);
+                }
+            }
+        }
+    }
+}
+>>>>>>> start

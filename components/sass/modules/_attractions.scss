@@ -1,4 +1,5 @@
 #attractions {
+<<<<<<< HEAD
   @include clearfix;
   @include container(100%);
   padding: 0;
@@ -19,4 +20,27 @@
     background: rgba($light, .8);
     @include border-radius(10px);
   }
+=======
+    @include clearfix;
+    @include container(100%);
+    padding: 0;
+    @include backgroundImage('../images/hotel/attractions.jpg');
+
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+
+    article {
+        @include container(80%);
+        @include breakpoint($breakpointMedium) {
+            @include container(50%);
+        }
+        padding: 20px;
+        margin-top: 200px;
+        margin-bottom: 200px;
+        background: rgba($light, .8);
+        @include border-radius(10px);
+
+    }
+>>>>>>> start
 }

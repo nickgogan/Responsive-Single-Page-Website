@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   font: $mainFont;
   background: $backgroundColor;
   color: $typeDefault;
@@ -17,4 +18,24 @@ strong {
 p {
   font-weight: $thin;
   padding-bottom: 10px;
+=======
+    font: $fontFamily;
+    background: $backgroundColor;
+    color:$typeDefault;
+}
+
+#{headings()} {
+    font: $headFont;
+    color: $headColor;
+    font-weight: $thin;
+}
+
+strong  {
+    font-weight: $bold;
+}
+
+p {
+    font-weight: $thin;
+    padding-bottom: 10px;
+>>>>>>> start
 }

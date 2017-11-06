@@ -1,4 +1,5 @@
 #events {
+<<<<<<< HEAD
   padding: 0;
   @include clearfix;
 
@@ -38,3 +39,41 @@
     @include backImage('../images/hotel/events_wedding.jpg', to left, 0, 0, 40% top);
   } //weddings
 } //events
+=======
+    padding: 0;
+    @include clearfix;
+    
+    .event {
+        position: relative;
+        @include container(100%);
+        @include breakpoint($breakpointSmall) {
+            @include span(6 of 12 0);
+        }
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            background: rgba($dark, .7);
+            padding: 30px;
+            color: $light;
+            font-weight: $thin;
+            line-height: 130%;
+
+            h2 {
+                color: $light;
+                line-height: 1em;
+            }
+            p {
+                padding: 5px 0;
+            }
+        }
+    }
+
+    #businessmeetings {
+        @include backgroundImage('../images/hotel/events_conference.jpg', to right, 0, 0, 65% top);
+    }
+    #weddings {
+        @include backgroundImage('../images/hotel/events_wedding.jpg', to left, 0, 0, 40% top);
+    }
+}
+>>>>>>> start

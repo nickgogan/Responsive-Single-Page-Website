@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin backImage(
   $image,
   $grDir: to bottom,
@@ -28,3 +29,36 @@
     clear: both;
   } //after
 } //clearfix
+=======
+@mixin backgroundImage(
+    $image,
+    $gradientDirection: to bottom,
+    $opacityStart: 0,
+    $opacityEnd: 0,
+    $backgroundPosition: center center
+    ) {
+    background: 
+        linear-gradient(
+            $gradientDirection,
+            rgba(0,0,0, $opacityStart), 
+            rgba(0,0,0, $opacityEnd)), 
+        url($image);
+    background-repeat:  no-repeat;
+    background-position: $backgroundPosition;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@mixin clearfix {
+    &:before, &:after {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+>>>>>>> start
