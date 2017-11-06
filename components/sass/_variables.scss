@@ -1,0 +1,46 @@
+@include border-box-sizing;
+
+//Font
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,400,600,800");
+
+//Grid system configuration
+$susy: (
+    columns: 12,
+    container: 60em,
+    gutter: 1/4,
+    gutter-position: inside,
+);
+
+$breakpointNarrow: 400px;
+$breakpointSmall: 650px;
+$breakpointMedium: 960px;
+$breakpointWide: 1200px;
+
+//Color Palette
+$blue: #063642;
+$green: #45B29D;
+$yellow: #EFC94C;
+$orange: #E27A3F;
+$red: #DF4848;
+$pink: #CD0069;
+$purple: #6C71C4;
+$dark: #000000;
+$light: #ffffff;
+
+$backgroundColor: $light;
+$typeDefault: $dark;
+$navBackground: $blue;
+$navForeground: $light;
+$navHover: $yellow;
+$navBrandBg: $red;
+$headerSubBg: $dark;
+
+//Typography
+$fontFamily: "Exo", "Helvetica Nueue", Helvetica, Arial, sans-serif;
+$thin: 200;
+$normal: 400;
+$heavy: 600;
+$bold: 800;
+$headFont: 200 1.5em/1.5em $fontFamily;
+$mainColor: 200 1em/1.5em $fontFamily;
+$headColor: lighten($blue, 20);
