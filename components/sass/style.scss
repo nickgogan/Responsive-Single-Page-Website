@@ -14,3 +14,19 @@
 @import "susy";
 @import "breakpoint";
 
+//Core Components
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+//Import Modules
+@import "modules/intro";
+@import "modules/attractions";
+@import "modules/dining";
+@import "modules/events";
+@import "modules/footer";
+@import "modules/hotelinfo";
+@import "modules/nav";
+@import "modules/rooms";
+@import "modules/welcome";

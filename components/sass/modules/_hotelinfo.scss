@@ -1,0 +1,85 @@
+#hotelinfo {
+    @include background-image(linear-gradient(top, darken($purple, 20), $green));
+    color: $light;
+
+    #{headings()} {
+        color: $light;
+    }
+
+    .heading {
+        h1 {
+            font-size: 3em;
+            font-weight: $thin;
+        }
+    }
+
+    h2 {
+        color: lighten($purple, 20);
+        font-size: 1.3em;
+        line-height: 110%;
+        padding: 10px 0;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 130%;
+    }
+
+    ul li {
+        list-style: square;
+        margin-left: 10%;
+        line-height: 115%;
+        margin-bottom: 5px;
+    }
+
+    #usefulinfo {
+        @include clearfix;
+        section {
+            @include breakpoint($breakpointSmall) {
+                @include span(1 of 3);
+            }
+            @include breakpoint(450px $breakpointSmall) {
+                &.checklist {
+                    @include span(1 of 2);
+                }
+            }
+        }
+    }
+
+    #arrivalinfo {
+        ul {
+            margin: 0;
+            li {
+                padding: 15px 0;
+                border-top: 1px solid $light;
+                list-style: none;
+                margin-left: 0;
+
+                strong { 
+                    color: $yellow;
+                }
+
+                &:first-child {
+                    border-top: none;
+                }
+
+            }
+        }
+    }
+
+    #greenprogram {
+        background-color: rgba(darken($green, 30), .5);
+        margin-top: 20px;
+
+        @include breakpoint($breakpointWide) {
+            @include background-image(url('../images/misc/greenplanet.png'));
+            background-size: 400px;
+            background-repeat: no-repeat;
+            background-position: 120% center;
+            padding-right: 300px;
+        }
+        border: 1px solid $light;
+        padding: 20px;
+        @include border-radius(20px);
+    }
+}
