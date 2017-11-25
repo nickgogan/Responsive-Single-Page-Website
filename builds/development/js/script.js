@@ -31,6 +31,9 @@ $(function() {
         $('.fullheight').css('height', wheight);
     });
 
+    /*********************************************************
+     ANIMATIONS
+     *********************************************************/
     //Tween Animation
     var topoffset = 43;
     var attractionsTween = TweenMax.staggerFromTo('#attractions article', 1, {opacity: 0, scale: 0}, {delay: 1, opacity: 1, scale: 1, ease: Back.easeOut});
