@@ -1,2 +1,2 @@
 # Responsive Single Page Layouts
-Created using Compass, Susy, Breakpoints, TweenMax, ScrollJS
+Created with Sass using Compass, Susy, Breakpoints, TweenMax, and ScrollJS.
